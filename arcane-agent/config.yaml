@@ -1,0 +1,24 @@
+name: "Arcane-Agent"
+description: "Arcane-Agent for Home Assistant"
+url: "https://github.com/traukainehm/homeassistant-arcane-agent"
+version: "0.20.0"
+slug: "arcane-agent"
+init: false
+stdin: true
+hassio_api: false
+homeassistant_api: false
+docker_api: true
+host_network: true
+options:
+  manager_api_url: null
+  agent_token: null
+schema:
+  manager_api_url: str
+  agent_token: password
+map:
+  - type: addon_config
+    path: /app/data
+arch:
+  - aarch64
+  - amd64
+image: "traukainehm/homeassistant-arcane-agent-{arch}"

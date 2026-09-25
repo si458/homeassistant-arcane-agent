@@ -1,0 +1,10 @@
+---
+configuration:
+  manager_api_url:
+    name: Arcane Manager API URL
+    description: >-
+      Manager URL provided when creating the direct environment in Arcane
+  agent_token:
+    name: Arcane Agent Token
+    description: >-
+      Token generated for this environment in Arcane
