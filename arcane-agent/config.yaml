@@ -17,6 +17,7 @@ schema:
 map:
   - type: app_config
     path: /app/data
+    read_only: false
 arch:
   - aarch64
   - amd64
