@@ -5,20 +5,18 @@ version: "0.20.0"
 slug: "arcane-agent"
 init: false
 stdin: true
-hassio_api: false
-homeassistant_api: false
 docker_api: true
-host_network: true
+ports:
+  3553/tcp: 3553
 options:
-  manager_api_url: null
-  agent_token: null
+  manager_api_url: ""
+  agent_token: ""
 schema:
   manager_api_url: str
   agent_token: password
 map:
-  - type: addon_config
+  - type: app_config
     path: /app/data
 arch:
   - aarch64
   - amd64
-image: "traukainehm/homeassistant-arcane-agent-{arch}"

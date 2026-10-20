@@ -3,7 +3,7 @@ configuration:
   manager_api_url:
     name: Arcane Manager API URL
     description: >-
-      Manager URL provided when creating the direct environment in Arcane
+      Manager API URL provided by Arcane (for example http://192.168.1.10:3552)
   agent_token:
     name: Arcane Agent Token
     description: >-
