@@ -26,4 +26,6 @@ else
     export AGENT_MODE=true PORT=3553
     [[ -n "${LISTEN}" ]] && export LISTEN
 fi
-exec ./arcane-agent
+mkdir -p /app/data
+cd /app
+exec /arcane-agent
