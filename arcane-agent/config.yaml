@@ -11,9 +11,15 @@ ports:
 options:
   manager_api_url: ""
   agent_token: ""
+  mode: direct
+  environment: production
+  listen: ""
 schema:
   manager_api_url: str
   agent_token: password
+  mode: list(direct|edge)
+  environment: str?
+  listen: str?
 map:
   - type: app_config
     path: /app/data
